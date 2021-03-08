@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio sui cognommi</title>
+  </head>
+  <body>
+
+
+
+    <script type="text/javascript">
+      // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato.
+      // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana"
+      // (partendo da 1) del cognome dell'utente.
+
+
+      var cognomi = ["caligiuri", "deluca", "antonioni", "filiberti", "cartomanti", "trappani", "elefanti", "zorro"];
+      var input = prompt("Inserisci il tuo cognome usando solo lettere minuscole");
+      cognomi.push(input);
+      cognomi.sort();
+
+      for (var i = 0; i < cognomi.length; i++) {
+
+        console.log((i + 1), cognomi[i]);
+      }
+
+      // FUNZIONA SOLO SE LE LETTEETTERE INIZIALI DI OGNI PAROLA SONO TUTTE MAIUSCOLE O TUTTE MINUSCOLE
+    </script>
+  </body>
+</html>
